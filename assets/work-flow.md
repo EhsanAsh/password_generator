@@ -1,3 +1,5 @@
+![Build Status](./image/SmallSquareLogoJpg.jpg)
+
 # User Story:
 
 >*AS AN employee* with access to sensitive data
@@ -30,29 +32,26 @@
 
 ---
 ## Tasks:
-1. Style the 
-2. Create a nav bar with related links inside. Connect each link to the corresponding section.
-3. Create a container, then add images related to applications and projects that has been done so far with proper title. connect that container to the related link.
-4. First application's image should be larger than the others.
-5. Define a link for each application's image inorder to connect that image to the related deployed application.
-6. Preper sample applications  and connect them to related section in the main webpage.
-7. Design and modify the webside with respect to Rsposive Web Design, so that the whole application functions properly through every viewport and screen size. 
-8. Test and run the application to make sure that every element and link is functioning.
-9. Provide a decent README file.
-10. Deploy the application through GitHub pages, then submit the live URL and code repositery's link. 
+1. Create a prompt which displays the options that user has with complete discription and instruction.
+2. Add a section which lets a user to select between various choices.
+3. Get an input from the user which determine the length of the password characters.(Validate the input to meet the critera)
+4. Get confirmation for critera choices.
+5. Validate choices to make sure that they meet the least criterion expected.
+6. Define needed and proper variables to store data. use if statements to make sure that the created password meets the user's expectations. Then generate a random password.
+7. Display the password inside the HTML file. 
 
 ---
 ## Pattern Recognition:
-- Use CSS Reset
-- Use HTML semantic elements.
-- Use anchor tags and style them as button.
-- Connect each link to the corresponding section by using id.
-- Apply Flexbox, position property(if needed), media queries and proper relative units to make the website responsive
-- Use git and github to track every step and changes.
+- Use Function.
+- Use alert, confirm, prompt methods to display messages and to receive inputs.
+- Use if statement to validate any statement or expresion that is necessary.
+- Use for loop and random method.
+- Use let keyword to create variables.
+- Use return to return the final value.
 
 ---
 ## Abstraction:
-- Ignore functionalities related to Java Script for now.
+>Ignore the style and structure as they have been created already.
 
 ---
 ## sequence:

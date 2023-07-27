@@ -82,6 +82,8 @@ function generatePassword() {
   for (let i = 0; i < passwordLength; i++) {
     password += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
   }
+
+  return password;
 }
 
 // Get references to the #generate element

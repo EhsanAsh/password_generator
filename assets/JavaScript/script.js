@@ -6,6 +6,7 @@ function generatePassword() {
   
   alert("In the next series of prompts, please choose the criteria for your password. \n\nNote: Password must be between 8 and 128 characters. \n\nClick 'OK' to continue.");
 
+  // Prompting the user to choose the length of their password. Also adding an if statement to validate the user's input.
   let passwordLength = prompt("Please enter the length of your password. \n\nNote: Password must be between 8 and 128 characters.");
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password must be between 8 and 128 characters.");
@@ -14,6 +15,7 @@ function generatePassword() {
     alert("Your password will be " + passwordLength + " characters long.");
   }
 
+  // Prompting the user to choose the criteria for their password. Also adding an if statement to make sure the user chooses at least one of the criteria.
   let lowercase = confirm("Would you like to include lowercase letters in your password?");
   let uppercase = confirm("Would you like to include uppercase letters in your password?");
   let numeric = confirm("Would you like to include numbers in your password?");
@@ -22,6 +24,27 @@ function generatePassword() {
     alert("You must choose at least one of the criteria.");
     return;
   }
+  if (lowercase) {
+    lowercase = "Sure!";
+  } else {
+    lowercase = "Nope!";
+  }
+  if (uppercase) {
+    uppercase = "Sure!";
+  } else {
+    uppercase = "Nope!";
+  }
+  if (numeric) {
+    numeric = "Sure!";
+  } else {
+    numeric = "Nope!";
+  }
+  if (special) {
+    special = "Sure!";
+  } else {
+    special = "Nope!";
+  }
+  alert("Your password will include the following criteria: \n\nLowercase letters: " + lowercase + "\nUppercase letters: " + uppercase + "\nNumbers: " + numeric + "\nSpecial characters: " + special);
 }
 
 // Get references to the #generate element

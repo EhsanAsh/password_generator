@@ -18,6 +18,10 @@ function generatePassword() {
   let uppercase = confirm("Would you like to include uppercase letters in your password?");
   let numeric = confirm("Would you like to include numbers in your password?");
   let special = confirm("Would you like to include special characters in your password?");
+  if (lowercase === false && uppercase === false && numeric === false && special === false) {
+    alert("You must choose at least one of the criteria.");
+    return;
+  }
 }
 
 // Get references to the #generate element

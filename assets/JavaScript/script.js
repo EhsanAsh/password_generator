@@ -7,6 +7,7 @@ function generatePassword() {
   alert("In the next series of prompts, please choose the criteria for your password. \n\nNote: Password must be between 8 and 128 characters. \n\nClick 'OK' to continue.");
 
   // Prompting the user to choose the length of their password. Also adding an if statement to validate the user's input.
+  // Used (https://www.w3schools.com/jsref/met_win_prompt.asp) as a reference for the prompt method.
   let passwordLength = prompt("Please enter the length of your password. \n\nNote: Password must be between 8 and 128 characters.");
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password must be between 8 and 128 characters.");
@@ -16,6 +17,7 @@ function generatePassword() {
   }
 
   // Prompting the user to choose the criteria for their password. Also adding an if statement to make sure the user chooses at least one of the criteria.
+  //Used (https://www.w3schools.com/jsref/met_win_confirm.asp) as a reference for the confirm method.
   let lowercase = confirm("Would you like to include lowercase letters in your password?");
   let uppercase = confirm("Would you like to include uppercase letters in your password?");
   let numeric = confirm("Would you like to include numbers in your password?");
@@ -24,6 +26,7 @@ function generatePassword() {
     alert("You must choose at least one of the criteria.");
     return;
   }
+  // Just a little fun for the user to see what criteria they chose.
   if (lowercase) {
     lowercase = "Sure!";
   } else {
@@ -45,6 +48,40 @@ function generatePassword() {
     special = "Nope!";
   }
   alert("Your password will include the following criteria: \n\nLowercase letters: " + lowercase + "\nUppercase letters: " + uppercase + "\nNumbers: " + numeric + "\nSpecial characters: " + special);
+
+  // generating the password
+  //Used(https://owasp.org/www-community/password-special-characters) as a reference for the special characters.
+  let password = "";
+  let passwordCharacters = "";
+  let lowercaseCharacters = "abcdefghijklmnopqrstuvwxyz";
+  let uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let numericCharacters = "0123456789";
+  let specialCharacters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  //Adding the user's chosen criteria to the passwordCharacters variable.
+  if (lowercase === "Sure!") {
+    passwordCharacters += lowercaseCharacters;
+  }
+  
+  if (uppercase === "Sure!") {
+    passwordCharacters += uppercaseCharacters;
+  }
+  
+  if (numeric === "Sure!") {
+    passwordCharacters += numericCharacters;
+  }
+  
+  if (special === "Sure!") {
+    passwordCharacters += specialCharacters;
+  }
+  // console.log(passwordCharacters);
+
+  // Generating a random password based on the user's chosen criteria.
+  //Used(https://www.w3schools.com/jsref/jsref_random.asp) as a reference for the Math.random method.
+  //Used(https://www.w3schools.com/jsref/jsref_floor.asp) as a reference for the Math.floor method.
+  //Used(https://www.w3schools.com/jsref/jsref_charat.asp) as a reference for the charAt method.
+  for (let i = 0; i < passwordLength; i++) {
+    password += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
+  }
 }
 
 // Get references to the #generate element

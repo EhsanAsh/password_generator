@@ -1,4 +1,4 @@
-![Build Status](./image/SmallSquareLogoJpg.jpg)
+![Ehsan@sh](./image/Favicon.ico)
 
 # User Story:
 

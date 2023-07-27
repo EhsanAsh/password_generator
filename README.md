@@ -57,6 +57,5 @@ This is a secure, simple and on-demand **Random Password Generator** which is pr
 ## Live URL
 
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
-(https://ehsanash.github.io/Horiseon_marketing_webpage/)
 
 [EhsanAsh](https://ehsanash.github.io/password_generator/)

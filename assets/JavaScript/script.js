@@ -7,6 +7,12 @@ function generatePassword() {
   alert("In the next series of prompts, please choose the criteria for your password. \n\nNote: Password must be between 8 and 128 characters. \n\nClick 'OK' to continue.");
 
   let passwordLength = prompt("Please enter the length of your password. \n\nNote: Password must be between 8 and 128 characters.");
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert("Password must be between 8 and 128 characters.");
+    return;
+  } else {
+    alert("Your password will be " + passwordLength + " characters long.");
+  }
 }
 
 // Get references to the #generate element

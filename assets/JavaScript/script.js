@@ -3,6 +3,8 @@ function generatePassword() {
 
   // Creating a list of choices for password criteria to inform the user.
   alert("Please choose the criteria for your password from the list below. \n\n1. Password length between 8 and 128 characters. \n2. Lowercase letters. \n3. Uppercase letters. \n4. Numbers. \n5. Special characters. \n\nIn order to generate a password, you must choose at least one of the criteria. \nClick 'OK' to continue.");
+  
+  alert("In the next series of prompts, please choose the criteria for your password. \n\nNote: Password must be between 8 and 128 characters. \n\nClick 'OK' to continue.");
 
 }
 

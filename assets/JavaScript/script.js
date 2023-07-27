@@ -57,6 +57,23 @@ function generatePassword() {
   let uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let numericCharacters = "0123456789";
   let specialCharacters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  //Adding the user's chosen criteria to the passwordCharacters variable.
+  if (lowercase === "Sure!") {
+    passwordCharacters += lowercaseCharacters;
+  }
+  
+  if (uppercase === "Sure!") {
+    passwordCharacters += uppercaseCharacters;
+  }
+  
+  if (numeric === "Sure!") {
+    passwordCharacters += numericCharacters;
+  }
+  
+  if (special === "Sure!") {
+    passwordCharacters += specialCharacters;
+  }
+  // console.log(passwordCharacters);
 }
 
 // Get references to the #generate element

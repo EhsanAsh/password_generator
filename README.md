@@ -48,9 +48,9 @@ This is a secure, simple and on-demand **Random Password Generator** which is pr
 ## Credits
 
 *Followed Websites*
-![Ayo](https://ileriayo.github.io/markdown-badges/)
-![W3Schools](https://ileriayo.github.io/markdown-badges/)
-![Owasp](https://owasp.org/www-community/password-special-characters)
+[Ayo](https://ileriayo.github.io/markdown-badges/)
+[W3Schools](https://ileriayo.github.io/markdown-badges/)
+[Owasp](https://owasp.org/www-community/password-special-characters)
 
 ---
 
@@ -59,4 +59,4 @@ This is a secure, simple and on-demand **Random Password Generator** which is pr
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 (https://ehsanash.github.io/Horiseon_marketing_webpage/)
 
-![EhsanAsh](https://ehsanash.github.io/password_generator/)
+[EhsanAsh](https://ehsanash.github.io/password_generator/)

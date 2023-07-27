@@ -74,6 +74,14 @@ function generatePassword() {
     passwordCharacters += specialCharacters;
   }
   // console.log(passwordCharacters);
+
+  // Generating a random password based on the user's chosen criteria.
+  //Used(https://www.w3schools.com/jsref/jsref_random.asp) as a reference for the Math.random method.
+  //Used(https://www.w3schools.com/jsref/jsref_floor.asp) as a reference for the Math.floor method.
+  //Used(https://www.w3schools.com/jsref/jsref_charat.asp) as a reference for the charAt method.
+  for (let i = 0; i < passwordLength; i++) {
+    password += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
+  }
 }
 
 // Get references to the #generate element

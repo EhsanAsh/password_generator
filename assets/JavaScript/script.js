@@ -13,6 +13,11 @@ function generatePassword() {
   } else {
     alert("Your password will be " + passwordLength + " characters long.");
   }
+
+  let lowercase = confirm("Would you like to include lowercase letters in your password?");
+  let uppercase = confirm("Would you like to include uppercase letters in your password?");
+  let numeric = confirm("Would you like to include numbers in your password?");
+  let special = confirm("Would you like to include special characters in your password?");
 }
 
 // Get references to the #generate element
